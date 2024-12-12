@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="todolist2.css">
+    <title>ToDoList</title>
+</head>
+
+<body>
+
+   <div class="header"> <h1>To-Do List</h1>
+
+    <!-- Form for adding tasks -->
+    <form id="todo-form">
+        <label for="task-input"></label><br>
+        <input type="text" id="task-input" placeholder="Add a task...">
+        <button type="submit" id="addbtn">Add Task</button>
+        <div class="error" id="error-message"></div>
+    </form>
+</div>
+
+    <!-- To-Do List -->
+    <div id="todo-container">
+        <h2>Tasks</h2>
+        <ul id="task-list"></ul>
+    </div>
+
+
+    <br>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.</button>
+
+    <p id="demo"></p> 
+
+
+    <script src="todolist2.js"></script>
+
+</body>
+
+</html>
